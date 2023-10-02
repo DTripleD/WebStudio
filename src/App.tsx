@@ -1,10 +1,9 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import SharedLayout from "./components/SharedLayout";
+import SharedLayout from "./components/SharedLayout/SharedLayout";
 import HomePage from "./pages/HomePage";
 import ContactsPage from "./pages/ContactsPage";
 import PortfolioPage from "./pages/PortfolioPage";
-import ErrorPage from "./components/ErrorPage";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 function App() {
   return (
