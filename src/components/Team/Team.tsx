@@ -8,7 +8,7 @@ const Team = () => {
         <h2 className={css.team__title}>Наша команда</h2>
         <ul className={`${css.list} ${css.team__list}`}>
           {data.map((person) => (
-            <li className={css.team__item}>
+            <li className={css.team__item} key={person.id}>
               <picture>
                 <source
                   media="(min-width: 1200px)"

@@ -33,6 +33,7 @@ import L2x_4_540 from "../images/team/04_l@2x-540.jpg";
 
 export const data = [
   {
+    id: 1,
     name: "Ігор Дем'яненко",
     position: "Product Designer",
     photo_S1x: S1x_1_450,
@@ -43,6 +44,7 @@ export const data = [
     photo_L2x: L2x_1_540,
   },
   {
+    id: 2,
     name: "Ольга Рєпіна",
     position: "Frontend Developer",
     photo_S1x: S1x_2_450,
@@ -53,6 +55,7 @@ export const data = [
     photo_L2x: L2x_2_540,
   },
   {
+    id: 3,
     name: "Микола Тарасов",
     position: "Marketing",
     photo_S1x: S1x_3_450,
@@ -63,6 +66,7 @@ export const data = [
     photo_L2x: L2x_3_540,
   },
   {
+    id: 4,
     name: "Михайло Єрмаков",
     position: "UI Designer",
     photo_S1x: S1x_4_450,

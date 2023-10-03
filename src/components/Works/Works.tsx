@@ -8,7 +8,7 @@ const Works = () => {
         <h2 className={css.work__title}>Чим ми займаємося</h2>
         <ul className={`${css.list} ${css.work__list}`}>
           {worksData.map((work) => (
-            <li className={css.work__item}>
+            <li className={css.work__item} key={work.id}>
               <img
                 srcSet={`${work.image_l_1x} 1x, ${work.image_l_2x} 2x`}
                 src={work.image_l_1x}
