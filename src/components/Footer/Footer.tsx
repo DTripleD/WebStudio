@@ -1,5 +1,4 @@
 import css from "./Footer.module.scss";
-import Instagram from "../../images/instagram.svg?react";
 
 const Footer = () => {
   return (
@@ -52,7 +51,13 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   aria-label="instagram"
                 >
-                  <Instagram width="20" height="20" />
+                  <svg className="" width="20" height="20">
+                    <use
+                      href="../../images/icons.svg#icon-instagram1"
+                      width="100"
+                      height="100"
+                    ></use>
+                  </svg>
                 </a>
               </li>
               <li className={css.footer__soclist}>
@@ -63,7 +68,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   aria-label="instagram"
                 >
-                  <svg width="20" height="20">
+                  <svg className="" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter1"></use>
                   </svg>
                 </a>
@@ -76,7 +81,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   aria-label="instagram"
                 >
-                  <svg width="20" height="20">
+                  <svg className="" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook1"></use>
                   </svg>
                 </a>
@@ -90,7 +95,11 @@ const Footer = () => {
                   aria-label="instagram"
                 >
                   <svg width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin1"></use>
+                    <use
+                      href="../../images/icons.svg#icon-linkedin1"
+                      width="20"
+                      height="20"
+                    ></use>
                   </svg>
                 </a>
               </li>
@@ -113,7 +122,7 @@ const Footer = () => {
             <button type="submit" className={css.subscribe__btn}>
               Підписатися
               <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
+                <use href="../../images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>

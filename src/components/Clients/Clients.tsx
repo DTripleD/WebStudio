@@ -1,13 +1,15 @@
+import css from "./Clients.module.scss";
+
 const Clients = () => {
   return (
-    <section className="section section-clients">
-      <div className="container clients">
-        <h2 className="clients__title">Постійні клієнти</h2>
-        <ul className="list clients__list">
-          <li className="clients__item">
+    <section className={`${css.section} ${css.section_clients}`}>
+      <div className={`${css.container} ${css.clients}`}>
+        <h2 className={css.clients__title}>Постійні клієнти</h2>
+        <ul className={`${css.list} ${css.clients__list}`}>
+          <li className={css.clients__item}>
             <a
               href=""
-              className="link clients__link"
+              className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="instagram"
@@ -17,10 +19,10 @@ const Clients = () => {
               </svg>
             </a>
           </li>
-          <li className="clients__item">
+          <li className={css.clients__item}>
             <a
               href=""
-              className="link clients__link"
+              className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="instagram"
@@ -30,10 +32,10 @@ const Clients = () => {
               </svg>
             </a>
           </li>
-          <li className="clients__item">
+          <li className={css.clients__item}>
             <a
               href=""
-              className="link clients__link"
+              className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="instagram"
@@ -43,10 +45,10 @@ const Clients = () => {
               </svg>
             </a>
           </li>
-          <li className="clients__item">
+          <li className={css.clients__item}>
             <a
               href=""
-              className="link clients__link"
+              className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="instagram"
@@ -56,10 +58,10 @@ const Clients = () => {
               </svg>
             </a>
           </li>
-          <li className="clients__item">
+          <li className={css.clients__item}>
             <a
               href=""
-              className="link clients__link"
+              className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="instagram"
@@ -69,10 +71,10 @@ const Clients = () => {
               </svg>
             </a>
           </li>
-          <li className="clients__item">
+          <li className={css.clients__item}>
             <a
               href=""
-              className="link clients__link"
+              className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="instagram"
