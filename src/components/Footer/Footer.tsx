@@ -1,5 +1,5 @@
 import css from "./Footer.module.scss";
-import { ReactComponent as Instagram } from "../../images/instagram.svg";
+import Instagram from "../../images/instagram.svg?react";
 
 const Footer = () => {
   return (
