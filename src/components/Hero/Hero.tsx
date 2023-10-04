@@ -21,7 +21,7 @@ const Hero = () => {
           >
             Замовити послугу
           </button>
-          {isOpen && <Modal isOpen={isOpen<Boolean>} setIsOpen={setIsOpen} />}
+          {isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen} />}
         </div>
       </section>
     </>

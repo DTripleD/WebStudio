@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import css from "./Header.module.scss";
+import icons from "../../images/icons.svg";
+import { useState } from "react";
+import Menu from "../Menu/Menu";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <>
       <header className={css.page_header}>
@@ -36,7 +40,7 @@ const Header = () => {
                 className={`${css.contacts__item} ${css.link}`}
               >
                 <svg className={css.contacts__icons} width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope-hover"></use>
+                  <use href={icons + "#icon-envelope-hover"}></use>
                 </svg>
                 info@devstudio.com
               </a>
@@ -47,7 +51,7 @@ const Header = () => {
                 className={`${css.contacts__item} ${css.link}`}
               >
                 <svg className={css.contacts__icons} width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
+                  <use href={icons + "#icon-smartphone"}></use>
                 </svg>
                 +38 096 111 11 11
               </a>
@@ -55,16 +59,18 @@ const Header = () => {
           </ul>
 
           <button
-            className="menu-toggle js-open-menu"
+            className={`${css.menu_toggle} `}
             aria-expanded="false"
             aria-controls="mobile-menu"
+            onClick={() => setIsOpen(!isOpen)}
           >
             <svg width="40" height="40" className="menu__open">
-              <use href="./images/icons.svg#icon-menu_header"></use>
+              <use href={icons + "#icon-menu_header"}></use>
             </svg>
           </button>
         </div>
       </header>
+      {isOpen && <Menu isOpen={isOpen} setIsOpen={setIsOpen} />}
     </>
   );
 };
