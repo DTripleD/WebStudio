@@ -126,10 +126,10 @@
   letter-spacing: 0.02em;
 
   color: #212121;
-}
 
-.mobile__pages_current {
-  color: #2196f3;
+  &:active {
+    color: #2196f3;
+  }
 }
 
 .mobile__number {

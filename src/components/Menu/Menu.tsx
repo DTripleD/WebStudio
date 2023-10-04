@@ -1,5 +1,6 @@
 import css from "./Menu.module.scss";
 import icons from "../../images/icons.svg";
+import { NavLink } from "react-router-dom";
 
 type Props = {
   isOpen: boolean;
@@ -17,22 +18,28 @@ const Menu = ({ isOpen, setIsOpen }: Props) => {
 
         <ul className={css.mobile_menu}>
           <li>
-            <a
-              href=""
+            <NavLink
+              to="/"
               className={`${css.link} ${css.mobile_pages} ${css.mobile__pages_current} `}
             >
               Студія
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="" className={`${css.link} ${css.mobile_pages}`}>
+            <NavLink
+              to="/portfolio"
+              className={`${css.link} ${css.mobile_pages}`}
+            >
               Портфоліо
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="" className={`${css.link} ${css.mobile_pages}`}>
+            <NavLink
+              to="/contacts"
+              className={`${css.link} ${css.mobile_pages}`}
+            >
               Контакти
-            </a>
+            </NavLink>
           </li>
         </ul>
 

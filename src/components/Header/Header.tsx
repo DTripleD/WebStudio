@@ -5,7 +5,7 @@ import { useState } from "react";
 import Menu from "../Menu/Menu";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <header className={css.page_header}>
