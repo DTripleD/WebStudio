@@ -1,4 +1,5 @@
 import css from "./Footer.module.scss";
+import icons from "../../images/icons.svg";
 
 const Footer = () => {
   return (
@@ -51,12 +52,8 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   aria-label="instagram"
                 >
-                  <svg className="" width="20" height="20">
-                    <use
-                      href="../../images/icons.svg#icon-instagram1"
-                      width="100"
-                      height="100"
-                    ></use>
+                  <svg width="20" height="20">
+                    <use href={icons + "#icon-instagram1"}></use>
                   </svg>
                 </a>
               </li>
@@ -66,40 +63,36 @@ const Footer = () => {
                   className={`${css.footer__soclinks} ${css.link}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="instagram"
-                >
-                  <svg className="" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li className={css.footer__soclist}>
-                <a
-                  href=""
-                  className={`${css.footer__soclinks} ${css.link}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="instagram"
-                >
-                  <svg className="" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li className={css.footer__soclist}>
-                <a
-                  href=""
-                  className={`${css.footer__soclinks} ${css.link}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="instagram"
+                  aria-label="twitter"
                 >
                   <svg width="20" height="20">
-                    <use
-                      href="../../images/icons.svg#icon-linkedin1"
-                      width="20"
-                      height="20"
-                    ></use>
+                    <use href={icons + "#icon-twitter1"}></use>
+                  </svg>
+                </a>
+              </li>
+              <li className={css.footer__soclist}>
+                <a
+                  href=""
+                  className={`${css.footer__soclinks} ${css.link}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook"
+                >
+                  <svg width="20" height="20">
+                    <use href={icons + "#icon-facebook1"}></use>
+                  </svg>
+                </a>
+              </li>
+              <li className={css.footer__soclist}>
+                <a
+                  href=""
+                  className={`${css.footer__soclinks} ${css.link}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin"
+                >
+                  <svg width="20" height="20">
+                    <use href={icons + "#icon-linkedin1"}></use>
                   </svg>
                 </a>
               </li>
@@ -122,7 +115,7 @@ const Footer = () => {
             <button type="submit" className={css.subscribe__btn}>
               Підписатися
               <svg width="24" height="24">
-                <use href="../../images/icons.svg#icon-send"></use>
+                <use href={icons + "#icon-send"}></use>
               </svg>
             </button>
           </form>

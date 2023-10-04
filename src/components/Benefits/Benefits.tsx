@@ -1,4 +1,5 @@
 import css from "./Benefits.module.scss";
+import icons from "../../images/icons.svg";
 
 const Benefits = () => {
   return (
@@ -8,8 +9,8 @@ const Benefits = () => {
         <ul className={`${css.list} ${css.benefits__list}`}>
           <li className={css.benefits__item}>
             <div className={css.benefits__icon}>
-              <svg className="" width="70" height="70">
-                <use href="./images/icons.svg#icon-antenna"></use>
+              <svg width="70" height="70">
+                <use href={icons + "#icon-antenna"}></use>
               </svg>
             </div>
             <h3 className={css.benefits__title}>Увага до деталей</h3>
@@ -20,8 +21,8 @@ const Benefits = () => {
           </li>
           <li className={css.benefits__item}>
             <div className={css.benefits__icon}>
-              <svg className="" width="70" height="70">
-                <use href="./images/icons.svg#icon-clock"></use>
+              <svg width="70" height="70">
+                <use href={icons + "#icon-clock"}></use>
               </svg>
             </div>
             <h3 className={css.benefits__title}>Пунктуальність</h3>
@@ -32,8 +33,8 @@ const Benefits = () => {
           </li>
           <li className={css.benefits__item}>
             <div className={css.benefits__icon}>
-              <svg className="" width="70" height="70">
-                <use href="./images/icons.svg#icon-diagram"></use>
+              <svg width="70" height="70">
+                <use href={icons + "#icon-diagram"}></use>
               </svg>
             </div>
             <h3 className={css.benefits__title}>Планування</h3>
@@ -43,8 +44,8 @@ const Benefits = () => {
           </li>
           <li className={css.benefits__item}>
             <div className={css.benefits__icon}>
-              <svg className="" width="70" height="70">
-                <use href="./images/icons.svg#icon-astronaut"></use>
+              <svg width="70" height="70">
+                <use href={icons + "#icon-astronaut"}></use>
               </svg>
             </div>
             <h3 className={css.benefits__title}>Сучасні технології</h3>

@@ -1,4 +1,5 @@
 import css from "./Clients.module.scss";
+import icons from "../../images/icons.svg";
 
 const Clients = () => {
   return (
@@ -12,10 +13,10 @@ const Clients = () => {
               className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="instagram"
+              aria-label="Company1"
             >
-              <svg className="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo1"></use>
+              <svg width="106" height="60">
+                <use href={icons + "#icon-Logo1"}></use>
               </svg>
             </a>
           </li>
@@ -25,10 +26,10 @@ const Clients = () => {
               className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="instagram"
+              aria-label="Company2"
             >
-              <svg className="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo2"></use>
+              <svg width="106" height="60">
+                <use href={icons + "#icon-Logo2"}></use>
               </svg>
             </a>
           </li>
@@ -38,10 +39,10 @@ const Clients = () => {
               className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="instagram"
+              aria-label="Company3"
             >
-              <svg className="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo3"></use>
+              <svg width="106" height="60">
+                <use href={icons + "#icon-Logo3"}></use>
               </svg>
             </a>
           </li>
@@ -51,10 +52,10 @@ const Clients = () => {
               className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="instagram"
+              aria-label="Company4"
             >
-              <svg className="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo4"></use>
+              <svg width="106" height="60">
+                <use href={icons + "#icon-Logo4"}></use>
               </svg>
             </a>
           </li>
@@ -64,10 +65,10 @@ const Clients = () => {
               className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="instagram"
+              aria-label="Company5"
             >
-              <svg className="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo5"></use>
+              <svg width="106" height="60">
+                <use href={icons + "#icon-Logo5"}></use>
               </svg>
             </a>
           </li>
@@ -77,10 +78,10 @@ const Clients = () => {
               className={`${css.link} ${css.clients__link}`}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="instagram"
+              aria-label="Company6"
             >
-              <svg className="" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo6"></use>
+              <svg width="106" height="60">
+                <use href={icons + "#icon-Logo6"}></use>
               </svg>
             </a>
           </li>

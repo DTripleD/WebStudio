@@ -1,5 +1,6 @@
 import { data } from "../../data/team";
 import css from "./Team.module.scss";
+import icons from "../../images/icons.svg";
 
 const Team = () => {
   return (
@@ -41,8 +42,8 @@ const Team = () => {
                       rel="noopener noreferrer"
                       aria-label="instagram"
                     >
-                      <svg className="" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                      <svg width="20" height="20">
+                        <use href={icons + "#icon-instagram"}></use>
                       </svg>
                     </a>
                   </li>
@@ -52,10 +53,10 @@ const Team = () => {
                       className={`${css.soclinks__link} ${css.link}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="instagram"
+                      aria-label="twitter"
                     >
-                      <svg className="" width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                      <svg width="20" height="20">
+                        <use href={icons + "#icon-twitter"}></use>
                       </svg>
                     </a>
                   </li>
@@ -65,10 +66,10 @@ const Team = () => {
                       className={`${css.soclinks__link} ${css.link}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="instagram"
+                      aria-label="facebook"
                     >
-                      <svg className="" width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
+                      <svg width="20" height="20">
+                        <use href={icons + "#icon-facebook"}></use>
                       </svg>
                     </a>
                   </li>
@@ -78,10 +79,10 @@ const Team = () => {
                       className={`${css.soclinks__link} ${css.link}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="instagram"
+                      aria-label="linkedin"
                     >
-                      <svg className="" width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      <svg width="20" height="20">
+                        <use href={icons + "#icon-linkedin"}></use>
                       </svg>
                     </a>
                   </li>
