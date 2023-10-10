@@ -2,15 +2,18 @@ import css from "./Modal.module.scss";
 import icons from "../../images/icons.svg";
 
 type Props = {
-  isOpen: boolean;
-  setIsOpen: (bool: boolean) => void;
+  isHidden: boolean;
+  setIsHidden: (bool: boolean) => void;
 };
 
-const Modal = ({ isOpen, setIsOpen }: Props) => {
+const Modal = ({ isHidden, setIsHidden }: Props) => {
   return (
-    <div className={`${css.backdrop} ${css.is_hidden}`} data-modal>
+    <div className={`${css.backdrop} ${isHidden ? css.is_hidden : ""}`}>
       <div className={css.modal}>
-        <button className={css.modal__close} onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className={css.modal__close}
+          onClick={() => setIsHidden(!isHidden)}
+        >
           <svg width="18" height="18">
             <use href={icons + "#icon-close"}></use>
           </svg>

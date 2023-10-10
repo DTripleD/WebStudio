@@ -3,9 +3,8 @@ import css from "./Hero.module.scss";
 import { useState } from "react";
 
 const Hero = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isHidden, setIsHidden] = useState(true);
 
-  console.log(isOpen);
   return (
     <>
       <section className={`${css.hero} ${css.section}`}>
@@ -17,11 +16,11 @@ const Hero = () => {
             type="button"
             className={css.hero__btn}
             data-modal-open
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={(prevState) => setIsHidden(!prevState)}
           >
             Замовити послугу
           </button>
-          {isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen} />}
+          <Modal isHidden={isHidden} setIsHidden={setIsHidden} />
         </div>
       </section>
     </>

@@ -63,7 +63,7 @@
   background-color: #ffffff;
   z-index: 999;
 
-  // transform: translateX(100%);
+  transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
 
@@ -126,10 +126,6 @@
   letter-spacing: 0.02em;
 
   color: #212121;
-
-  &:active {
-    color: #2196f3;
-  }
 }
 
 .mobile__number {
@@ -167,9 +163,13 @@
   color: #2196f3;
 }
 
-.mobile__links_line:not(:last-child):after {
+.mobile__links--line:not(:last-child):after {
   content: " ";
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
   margin-left: 10px;
+}
+
+.active {
+  color: var(--brand-color);
 }

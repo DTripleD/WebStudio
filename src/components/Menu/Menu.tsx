@@ -9,7 +9,10 @@ type Props = {
 const Menu = ({ isOpen, setIsOpen }: Props) => {
   return (
     <>
-      <div className={css.menu_container} id="mobile-menu">
+      <div
+        className={`${css.menu_container} ${isOpen ? css.is_open : ""}`}
+        id="mobile-menu"
+      >
         <button className={css.menu_toggle} onClick={() => setIsOpen(!isOpen)}>
           <svg width="40" height="40" className={css.menu__close}>
             <use href={icons + "#icon-close_header"}></use>
@@ -19,8 +22,13 @@ const Menu = ({ isOpen, setIsOpen }: Props) => {
         <ul className={css.mobile_menu}>
           <li>
             <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? `${css.link} ${css.mobile_pages} ${css.active}`
+                  : `${css.link} ${css.mobile_pages}`
+              }
               to="/"
-              className={`${css.link} ${css.mobile_pages} ${css.mobile__pages_current} `}
+              onClick={() => setIsOpen(!isOpen)}
             >
               Студія
             </NavLink>
@@ -28,7 +36,12 @@ const Menu = ({ isOpen, setIsOpen }: Props) => {
           <li>
             <NavLink
               to="/portfolio"
-              className={`${css.link} ${css.mobile_pages}`}
+              className={({ isActive }) =>
+                isActive
+                  ? `${css.link} ${css.mobile_pages} ${css.active}`
+                  : `${css.link} ${css.mobile_pages}`
+              }
+              onClick={() => setIsOpen(!isOpen)}
             >
               Портфоліо
             </NavLink>
@@ -36,7 +49,12 @@ const Menu = ({ isOpen, setIsOpen }: Props) => {
           <li>
             <NavLink
               to="/contacts"
-              className={`${css.link} ${css.mobile_pages}`}
+              className={({ isActive }) =>
+                isActive
+                  ? `${css.link} ${css.mobile_pages} ${css.active}`
+                  : `${css.link} ${css.mobile_pages}`
+              }
+              onClick={() => setIsOpen(!isOpen)}
             >
               Контакти
             </NavLink>

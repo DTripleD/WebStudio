@@ -7,11 +7,19 @@
   top: 0;
   left: 0;
 
+  z-index: 1;
+
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is_hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -59,12 +67,6 @@
     fill: #2196f3;
   }
 }
-
-// .backdrop.is_hidden {
-//   opacity: 0;
-//   pointer-events: none;
-//   visibility: hidden;
-// }
 
 .modal__article {
   font-family: "Roboto";

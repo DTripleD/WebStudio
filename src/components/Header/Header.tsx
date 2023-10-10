@@ -16,17 +16,38 @@ const Header = () => {
           <nav className={css.nav}>
             <ul className={`${css.pages} ${css.list}`}>
               <li className={css.pages__item}>
-                <NavLink to="/" className={css.pages__link}>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${css.pages__link} ${css.active}`
+                      : css.pages__link
+                  }
+                >
                   Студія
                 </NavLink>
               </li>
               <li className={css.pages__item}>
-                <NavLink to="/portfolio" className={css.pages__link}>
+                <NavLink
+                  to="/portfolio"
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${css.pages__link} ${css.active}`
+                      : css.pages__link
+                  }
+                >
                   Портфоліо
                 </NavLink>
               </li>
               <li className={css.pages__item}>
-                <NavLink to="/contacts" className={css.pages__link}>
+                <NavLink
+                  to="/contacts"
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${css.pages__link} ${css.active}`
+                      : css.pages__link
+                  }
+                >
                   Контакти
                 </NavLink>
               </li>
@@ -70,7 +91,7 @@ const Header = () => {
           </button>
         </div>
       </header>
-      {isOpen && <Menu isOpen={isOpen} setIsOpen={setIsOpen} />}
+      <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 };
