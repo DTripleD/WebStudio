@@ -6,17 +6,17 @@ const Contacts = () => {
       <section className={css.section}>
         <div className={`${css.container} ${css.contacts}`}>
           <h1 className={css.contacts_title}>Contacts</h1>
-          <div className={css.contacts_wrapper}>
-            <p className={css.contacts_about}>
-              This site was written according to the layout &#8658;&#160;
-            </p>
+
+          <span className={css.contacts_about}>
+            This site was written according to the layout &#8658;&#160;
             <a
               className={`${css.link} ${css.contacts_link}`}
               href="https://www.figma.com/file/3lQQ9l3yQYngZaAsfPkRSL/Web-Studio-(Version-2.1)-(Copy)?type=design&node-id=3-7653&mode=design&t=1ipfokCXHHNY9WFN-0"
             >
               click
             </a>
-          </div>
+          </span>
+
           <p className={css.contacts_about}>
             Now I am actively looking for work opportunities and if you have
             interesting offers, you can contact me in any way convenient for
